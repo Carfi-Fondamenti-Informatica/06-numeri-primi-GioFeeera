@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
     int n=0;
-    int m= (n-1);
     cout <<"inserisci un numero "; cin >> n;
+    int m= (n-1);
     if (primo (n, m)==true){
         cout << "numero primo"<<endl;
     }
