@@ -1,10 +1,10 @@
 #include "lib.h"
-int primo (int m, int n){
+int primo (int n, int m){
     bool x=true;
     if (m!=1){
         if ((n % m) !=0) {
             m--;
-            x = primo(m,n);
+            x = primo(n,m);
         }
         else {
             x= false;
