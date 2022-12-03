@@ -7,10 +7,10 @@ int main() {
     int n=0;
     int m= (n-1);
     cout <<"inserisci un numero "; cin >> n;
-    if (primo (m, n)==true){
+    if (primo (n, m)==true){
         cout << "numero primo"<<endl;
     }
-    else if (primo (m, n)==false){
+    else if (primo (n, m)==false){
         cout << "numero non primo" << endl;
     }
 
