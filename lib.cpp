@@ -1,18 +1,14 @@
 #include "lib.h"
-int primo (int n, int m){
-    bool x=true;
-    if (m!=1){
-        if ((n % m) !=0) {
-            m--;
-            x = primo(n,m);
-        }
-        else {
-            x= false;
-        }
-    }
-    else {
-        x = true;
-    }
-
-    return x;
+bool primo (int m, int n) {
+    m =abs(m);
+    n = abs(n);
+    if (m == 0 || n == 0)
+        return false;
+    int rest = m % --n;
+    if (rest == 0 && n > 1) {
+        return false;
+    } else if (n != 1)
+        return primo(m, n);
+    else
+        return true;
 }
