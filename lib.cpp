@@ -1,3 +1,4 @@
+#include <iostream> 
 #include "lib.h"
 bool primo (int m, int n) {
     m =abs(m);
