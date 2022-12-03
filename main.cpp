@@ -4,15 +4,13 @@
 using namespace std;
 
 int main() {
-    int n=0;
-    cout <<"inserisci un numero "; cin >> n;
-    int m= (n-1);
-    if (primo (n, m)==true){
-        cout << "numero primo"<<endl;
+    int m;
+    cin >> m;
+    if (primo(m,m)){
+        cout <<"numero primo";
     }
-    else if (primo (n, m)==false){
-        cout << "numero non primo" << endl;
+    else {
+        cout <<"numero non primo";
     }
-
     return 0;
 }
